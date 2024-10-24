@@ -37,6 +37,7 @@ purple=$(get_tmux_option "@tmux2k-purple" '#bf58ff')
 light_purple=$(get_tmux_option "@tmux2k-light-purple" '#ff65c6')
 
 declare -A plugin_colors=(
+    ["mpris"]="purple text"
     ["git"]="green text"
     ["cpu"]="blue text"
     ["ram"]="light_yellow text"
@@ -152,6 +153,7 @@ set_theme() {
         show_powerline=false
         text=$bg_main
         plugin_colors=(
+            ["mpris"]="text purple"
             ["git"]="text green"
             ["cpu"]="text blue"
             ["ram"]="text light_yellow"
